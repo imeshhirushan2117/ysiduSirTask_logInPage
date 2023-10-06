@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="mainSection">
+    <!--Galary-->
+    <section id="fistSecction">
+      <div id="fistSecctionDiv">
+        <img id="imgScection" src="assets/icon/lap.jpg" alt="image">
+      </div>
+
+      <section id="secandSecction">
+        <!-- form -->
+        <div class="secandDiv">
+          <label>Sign In</label>
+          <div action="signIn">
+
+            <div class="userIcon">
+              <img src="assets/icon/user.png" alt="">
+              <input id="txtUserName" type="text" placeholder="User Name">
+            </div>
+            <br>
+            <div class="userIcon">
+              <img src="assets/icon/password.png" alt="">
+              <input  id="txtPassword" type="text" placeholder="Password">
+            </div>
+
+            <div id="checkbox">
+              <input type="checkbox" name="" id="">
+              <label for="">Remember me</label>
+            </div>
+
+            <button id="btnSignIn">Log In</button>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </section>
+  </div>
+
+  <script>
+    
+    document.getElementById("btnSignIn").onclick=function(){
+       login();
+    }
+
+    function login() {
+  
+      console.log('ddddd');
+
+      var user = document.getElementById("txtUserName").value;
+      var password = document.getElementById("txtPassword").value;
+
+      if (user == 1 && password == 1) {
+         window.location.href='dashBoard/index.html'
+           alert("Login Successful")
+      } else {
+         alert("Invalid Username or Password")
+        
+      }
+
+    }
+
+
+</script>
+
+</body>
+
+</html>
